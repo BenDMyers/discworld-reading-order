@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discworld Reading Order Guide</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>">
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	<header>
+		<h1>Discworld Reading Order Guide</h1>
+		<p>A keyboard- and screenreader-navigable alternative to</p>
+	</header>
+	<main>
+		<section id="entry-points" aria-labelledby="h-entry-points">
+			<h2 id="h-entry-points">Entry Points</h2>
+			<ul>
+				<li>
+					<b>According to the author, you should start here:</b> <a href="#sourcery">Sourcery</a>
+				</li>
+				<li>
+					<b>Rincewind novels:</b> <a href="#the-colour-of-magic">The Colour of Magic</a>
+				</li>
+				<li>
+					<b>Science novels:</b> <a href="#the-science-of-discworld">The Science of Discword</a>
+				</li>
+				<li>
+					<b>Industrial Revolution:</b> <a href="#moving-pictures">Moving Pictures</a>
+				</li>
+				<li>
+					<b>Watch novels:</b> <a href="#guards-guards">Guards! Guards!</a>
+				</li>
+				<li>
+					<b>Moist von Lipwig:</b> <a href="#going-postal">Going Postal</a>
+				</li>
+				<li>
+					<b>Death novels:</b> <a href="#mort">Mort</a>
+				</li>
+				<li>
+					<b>Ancient Civilizations:</b> <a href="#pyramids">Pyramids</a>
+				</li>
+				<li>
+					<b>Witches novels:</b> <a href="#equal-rites">Equal Rites</a>
+				</li>
+				<li>
+					<b>Tiffany Aching:</b> <a href="#the-wee-free-men">The Wee Free Men</a>
+				</li>
+			</ul>
+		</section>
+		{% for throughline in throughlines._order %}
+		<section id="{{ throughline }}" aria-labelledby="h-{{ throughline }}">
+			<h2 id="h-{{ throughline }}">{{ throughlines[throughline].title }}</h2>
+			<div class="grid">
+				{% for storySlug in throughlines[throughline].major %}
+				{{ storySlug | storyCard: collections.all }}
+				{% endfor %}
+				{% for storySlug in throughlines[throughline].minor %}
+				{{ storySlug | storyCard: collections.all }}
+				{% endfor %}
+			</div>
+		</section>
+		{% endfor %}
+	</main>
+</body>
+</html>

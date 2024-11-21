@@ -1,0 +1,116 @@
+{
+	"_order": ["rincewind", "science", "industrialRevolution", "moist", "watch", "death", "ancientCivilizations", "witches", "tiffany"],
+	"rincewind": {
+		"title": "Rincewind Novels",
+		"major": [
+			"the-colour-of-magic",
+			"the-light-fantastic",
+			"sourcery",
+			"eric",
+			"interesting-times",
+			"the-last-continent",
+			"the-last-hero",
+			"unseen-academicals"
+		],
+		"minor": [
+			"troll-bridge",
+			"collegiate-casting-out"
+		]
+	},
+	"science": {
+		"title": "Science Novels",
+		"major": [
+			"the-science-of-discworld",
+			"the-science-of-discworld-ii",
+			"the-science-of-discworld-iii",
+			"the-science-of-discworld-iv"
+		],
+		"minor": []
+	},
+	"industrialRevolution": {
+		"title": "Industrial Revolution",
+		"major": [
+			"moving-pictures",
+			"the-truth",
+			"monstrous-regiment"
+		],
+		"minor": []
+	},
+	"moist": {
+		"title": "Moist von Lipwig",
+		"major": [
+			"going-postal",
+			"making-money",
+			"raising-steam"
+		],
+		"minor": [
+			"mrs-bradshaws-handbook"
+		]
+	},
+	"watch": {
+		"title": "Watch Novels",
+		"major": [
+			"guards-guards",
+			"men-at-arms",
+			"feet-of-clay",
+			"jingo",
+			"the-fifth-elephant",
+			"night-watch",
+			"thud",
+			"snuff"
+		],
+		"minor": [
+			"theatre-of-cruelty",
+			"wheres-my-cow",
+			"minutes",
+			"the-world-of-poo"
+		]
+	},
+	"death": {
+		"major": [
+			"mort",
+			"reaper-man",
+			"soul-music",
+			"hogfather",
+			"thief-of-time"
+		]
+	},
+	"ancientCivilizations": {
+		"title": "Ancient Civilizations",
+		"major": [
+			"pyramids",
+			"small-gods"
+		],
+		"minor": [
+			"death-and-what-comes-next"
+		]
+	},
+	"witches": {
+		"title": "Witches Novels",
+		"major": [
+			"equal-rites",
+			"wyrd-sisters",
+			"witches-abroad",
+			"lords-and-ladies",
+			"maskerade",
+			"carpe-jugulum"
+		],
+		"minor": [
+			"nanny-oggs-cookbook",
+			"the-sea-and-little-fishes"
+		]
+	},
+	"tiffany": {
+		"title": "Tiffany Aching",
+		"major": [
+			"the-wee-free-men",
+			"a-hat-full-of-sky",
+			"wintersmith",
+			"i-shall-wear-midnight",
+			"the-shepherds-crown"
+		],
+		"minor": [
+			"the-amazing-maurice"
+		]
+	}
+}
