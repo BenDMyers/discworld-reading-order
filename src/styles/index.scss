@@ -1,0 +1,116 @@
+@use '../../node_modules/open-props-scss/index.scss' as op;
+
+:root {
+	background-color: light-dark(#{op.$sand-0}, #{op.$sand-11});
+	color-scheme: dark light;
+	font-family: op.$font-transitional;
+	
+	@media screen and (prefers-reduced-motion: no-preference) {
+		scroll-behavior: smooth;
+	}
+}
+
+* {
+	scroll-margin-block: op.$size-6;
+}
+
+main {
+	max-inline-size: 160ch;
+	margin-inline: auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	gap: op.$size-8;
+}
+
+.story {
+	background-color: light-dark(#{op.$sand-1}, #{op.$sand-10});
+	color: light-dark(#{op.$sand-10}, #{op.$sand-2});
+	border: 0.05px solid light-dark(#{op.$sand-4}, #{op.$sand-7});
+	border-radius: op.$radius-2;
+	padding-block: op.$size-2;
+	padding-inline: op.$size-3;
+
+	:focus {
+		outline: 3px solid light-dark(#{op.$blue-6}, #{op.$yellow-4});
+		outline-offset: op.$size-1;
+	}
+
+	--accent-background: light-dark(#{op.$yellow-4}, #{op.$yellow-4});
+	--accent-text: light-dark(#{op.$camo-11}, #{op.$camo-11});
+
+	&.starter {
+		--accent-background: light-dark(#{op.$orange-5}, #{op.$orange-5});
+		--accent-text: light-dark(#{op.$choco-11}, #{op.$choco-11});
+	}
+
+	&.science {
+		--accent-background: light-dark(#{op.$red-3}, #{op.$red-4});
+		--accent-text: light-dark(#{op.$pink-11}, #{op.$pink-11});
+	}
+
+	&.ya {
+		--accent-background: light-dark(#{op.$purple-11}, #{op.$purple-11});
+		--accent-text: light-dark(#{op.$purple-1}, #{op.$purple-1});
+	}
+
+	&.short {
+		--accent-background: light-dark(#{op.$jungle-3}, #{op.$jungle-6});
+		--accent-text: light-dark(#{op.$camo-12}, #{op.$camo-12});
+	}
+
+	&.illustrated {
+		--accent-background: light-dark(#{op.$cyan-2}, #{op.$cyan-3});
+		--accent-text: light-dark(#{op.$blue-11}, #{op.$blue-11});
+	}
+
+	hgroup {
+		h3 {
+			margin-block: 0;
+			font-size: op.$font-size-fluid-1;
+			font-weight: 700;
+		}
+
+		small {
+			background-color: var(--accent-background);
+			border: 0.05px solid light-dark(#{op.$sand-4}, #{op.$sand-7});
+			border-radius: op.$radius-1;
+			color: var(--accent-text);
+			font-weight: bold;
+			// font-style: italic;
+			padding-inline: op.$size-1;
+		}
+	}
+
+	dl {
+		display: grid;
+		gap: op.$size-4;
+
+		dt {
+			font-weight: 600;
+			color: light-dark(#{op.$sand-10}, #{op.$sand-3});
+		}
+
+		dd {
+			margin-inline-start: 0;
+			margin-block-start: op.$size-2;
+		}
+	}
+
+	a {
+		color: light-dark(#{op.$sand-8}, #{op.$sand-1});
+		text-decoration-thickness: 0.1ex;
+		text-underline-offset: 0.1ex;
+
+		&:hover {
+			text-decoration-thickness: 0.05ex;
+			opacity: 0.9;
+		}
+	}
+}
+
+section {
+	margin-block-end: op.$size-fluid-5;
+}

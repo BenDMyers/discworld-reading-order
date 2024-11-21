@@ -1,7 +1,8 @@
 {
 	"name": "discworld-reading-order",
 	"version": "1.0.0",
-	"main": ".eleventy.js",
+	"main": "eleventy.config.js",
+	"type": "module",
 	"scripts": {
 		"build": "eleventy",
 		"dev": "eleventy --serve"
@@ -11,6 +12,8 @@
 	"license": "ISC",
 	"description": "",
 	"dependencies": {
-		"@11ty/eleventy": "^3.0.0"
+		"@11ty/eleventy": "^3.0.0",
+		"open-props-scss": "^0.8.0",
+		"sass": "^1.81.0"
 	}
 }
