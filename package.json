@@ -1,0 +1,16 @@
+{
+	"name": "discworld-reading-order",
+	"version": "1.0.0",
+	"main": ".eleventy.js",
+	"scripts": {
+		"build": "eleventy",
+		"dev": "eleventy --serve"
+	},
+	"keywords": [],
+	"author": "Ben Myers <ben@benmyers.dev>",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@11ty/eleventy": "^3.0.0"
+	}
+}
